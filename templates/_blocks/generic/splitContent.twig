@@ -27,5 +27,10 @@
 		<div class="Mb(2rem) Mt(2rem)">
 			{{ copy }}
 		</div>
+		{% if revealOpen is defined and revealOpen %}
+			<button data-drop="{{kebab}}-drop" class="link -dark-grey D(ib)">Continue Reading
+				<span class="dropdown-arrow"></span>
+			</button>
+		{% endif %}
 	</div>
 </section>

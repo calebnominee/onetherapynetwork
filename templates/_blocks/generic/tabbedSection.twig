@@ -26,6 +26,7 @@
 		{% set buttonText = tab.linkButton.label ?? 'Join Our Community' %}
 		{% set target = tab.linkButton.target ?? '_self' %}
 		{% set calendly = tab.includeCalendly ?? false %}
+		{% set blocks = tab.tabbedPageBuilder.all() %}
 
 		<div class="inner-section {{ not loop.first ? 'hide -animation-hold' : '' }}" id="{{ headline|kebab }}">
 
@@ -52,10 +53,23 @@
 				</div>
 			</section>
 
-			
-			{% for block in tab.pageBuilder.all() %}
-				{% include '_blocks/generic/' ~ block.type.handle %}
-			{% endfor %}
+			<div class="tab-content">
+
+				{% include '_blocks/generic/splitContent' with {
+					block: blocks[0],
+					revealOpen: true,
+					kebab: headline|kebab
+				} %}
+			</div>
+
+
+			<div class="inner-section-drop" id="{{ headline|kebab }}-drop">
+				{% for block in blocks %}
+					{% if not loop.first %}
+						{% include '_blocks/generic/' ~ block.type.handle %}
+					{% endif %}
+				{% endfor %}
+			</div>
 
 		</div>
 

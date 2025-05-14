@@ -1,4 +1,4 @@
-dateModified: 1747250199
+dateModified: 1747250624
 elementSources:
   craft\elements\Entry:
     -
@@ -151,6 +151,7 @@ meta:
     5cbe08b7-b4bd-4a6b-be41-de9647b5eb19: Images # Images
     5edecfcc-5a21-49d5-bc86-601bf4f3f473: 'Button Link' # Button Link
     5efb6453-b77e-4846-ac2c-be514d47ed01: 'Tabbed Content' # Tabbed Content
+    6b421fe0-0847-49c3-8e70-c963eb76c400: 'Tabbed Page Builder' # Tabbed Page Builder
     6d042830-a0ea-4eb9-947c-8f8dd5fc93a0: 'Related Blog Selector' # Related Blog Selector
     6d792fe4-471d-48ed-bc45-5fe112ba7e46: Image # Image
     6ef4511a-c400-42dc-a704-e24d430676cb: 'Video Block' # Video Block

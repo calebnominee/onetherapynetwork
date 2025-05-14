@@ -80,10 +80,10 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-05-14T03:44:35+00:00'
+            dateAdded: '2025-05-14T19:23:44+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 69b71247-c0c6-4339-b528-2d8b66d72119 # Page Builder
+            fieldUid: 6b421fe0-0847-49c3-8e70-c963eb76c400 # Tabbed Page Builder
             handle: null
             includeInCards: false
             instructions: null
@@ -92,7 +92,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 868c9d77-b3ef-4f3a-a680-047efca57e29
+            uid: bb427629-dca2-4720-8e07-1ddf3f42d0ed
             userCondition: null
             warning: null
             width: 100

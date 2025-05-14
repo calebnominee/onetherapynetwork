@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: tabbedPageBuilder
+instructions: null
+name: 'Tabbed Page Builder'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 2fbdef88-e493-4e56-8414-fdaefea8111e # Split Content
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
