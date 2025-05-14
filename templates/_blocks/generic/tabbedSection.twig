@@ -51,6 +51,8 @@
 					</div>
 				</div>
 			</section>
+
+			
 			{% for block in tab.pageBuilder.all() %}
 				{% include '_blocks/generic/' ~ block.type.handle %}
 			{% endfor %}

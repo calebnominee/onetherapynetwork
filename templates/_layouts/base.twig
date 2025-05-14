@@ -54,9 +54,12 @@ gtag('config', 'UA-132743728-4');
 
 		</head>
 
-		<body class="is-loading" style="position: relative;"> {% block body %}{% endblock %}
-			</body>
+		<body class="is-loading" style="position: relative;">
+			<main>
+				{% block body %}{% endblock %}
+			</main>
+		</body>
 
-		</html>
+	</html>
 
-		{%- endminify -%}
+	{%- endminify -%}

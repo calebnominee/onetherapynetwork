@@ -92,6 +92,7 @@ footer .copyright a {
 
 main {
 	margin-top: 89px;
+	max-width: 1920px;
 }
 
 span.categories-title {
