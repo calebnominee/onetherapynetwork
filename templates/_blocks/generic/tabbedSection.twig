@@ -44,10 +44,7 @@
 					<div class="fade-up transition-delay-{{ finalCount }}">
 						<a class="button -red Mb(1rem)" href="{{ buttonUrl }}" target="{{ target }}">{{ buttonText }}</a>
 						{% if calendly %}
-							<p class="paragraph -color-dark-grey D(b) text-center">Still have questions?
-								<a class="paragraph -color-dark-grey -dec-underline D(ib)" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/weareone/30min'});return false;">Call
-																																																																																																			                                                                                                Us</a>
-							</p>
+							{% include '_components/global/calendly.twig' %}
 						{% endif %}
 					</div>
 				</div>

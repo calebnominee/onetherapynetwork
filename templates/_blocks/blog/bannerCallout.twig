@@ -13,11 +13,7 @@
 			<div class="shrink cell">
 				<a class="button -white Mb(1rem)" href="{{ buttonUrl }}" target="{{ target }}">{{ buttonText }}</a>
 				{% if calendly %}
-					<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-					<p class="paragraph -color-white D(b) text-center">Still have questions?
-						<a class="paragraph -color-white D(ib) -dec-underline" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/weareone/30min'});return false;">Call
-																																							Us</a>
-					</p>
+					{% include '_components/global/calendly.twig' %}
 				{% endif %}
 
 			</div>
