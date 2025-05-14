@@ -1,0 +1,22 @@
+<article class="section-container -animation-trigger -bg-grey grid-x align-middle Pb(3rem) Pt(20vh) Pt(9rem)!">
+	<div class="half-block content Mb(2rem) small-order-2 medium-order-1">
+		<h1 class="header-two -underline -after-navy grow-after Mb(2rem)">{{ headline }}</h1>
+		{{ excerpt }}
+		<div class="Mt(2rem)">
+			<a href="{{ url }}" class="link">Learn More</a>
+		</div>
+		{% if category|length %}
+			<div class="Mt(2rem)">
+				<span class="categories-title">Categories:
+				</span>
+				<a href="{{ category.url }}" class="button -navy transition-delay-2">
+					{{ category.title }}
+				</a>
+			</div>
+		{% endif %}
+	</div>
+
+	<div class="half-block -flush small-order-1 medium-order-2 Ta(end) Mb(2rem)--sm">
+		<img alt="{{ thumbnail.alt ?? '' }}" title="{{ thumbnail.title ?? '' }}" class="clip-path-up shrink" src="{{ thumbnail.url ?? '' }}"/>
+	</div>
+</article>

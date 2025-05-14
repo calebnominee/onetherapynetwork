@@ -1,0 +1,47 @@
+color: null
+fieldLayouts:
+  71c63952-25f3-4ff8-955f-3067207429cd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T02:05:03+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e96aa4b-c028-4264-bb83-cdc286b8736a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T02:10:07+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'A static mailchimp form will be embedded'
+            type: craft\fieldlayoutelements\Tip
+            uid: d42cab92-a68f-4f2c-84ce-343860f90476
+            userCondition: null
+        name: Content
+        uid: 9f96b25b-a20c-4273-af36-9a372e83c834
+        userCondition: null
+handle: newsletterSignup
+hasTitleField: false
+icon: null
+name: 'Newsletter Signup'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline|slice(0,30) }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

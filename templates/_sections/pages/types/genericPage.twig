@@ -1,0 +1,15 @@
+{% extends '_layouts/global' %}
+
+{% set hero = entry.hero.eagerly().one() %}
+
+{% block site %}
+
+	{% include '_components/heroes/' ~ hero.type.handle %}
+
+	{% for block in entry.pageBuilder.all() %}
+
+		{% include '_blocks/generic/' ~ block.type.handle %}
+
+	{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,55 @@
+color: null
+fieldLayouts:
+  d271f869-640a-45b7-8c8c-ef2d0d0e416b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T05:01:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b084d1c1-3bf7-4c12-94c9-70997524f3a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T05:12:24+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: copy
+            includeInCards: false
+            instructions: null
+            label: Copy
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e23d45a2-168c-4bcb-8946-e3da41b55eb0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9d2ed434-d754-4d7e-8984-7b41bbbce7ab
+        userCondition: null
+handle: tallParallaxHero
+hasTitleField: false
+icon: null
+name: 'Tall Parallax Hero'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

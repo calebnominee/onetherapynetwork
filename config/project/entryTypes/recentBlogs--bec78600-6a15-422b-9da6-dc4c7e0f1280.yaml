@@ -1,0 +1,55 @@
+color: null
+fieldLayouts:
+  90d19549-be3f-485f-8c4e-b9c8e71ef23c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T03:52:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: 'If left blank, will default to "Further Reading"'
+            label: Headline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fecef2c6-127d-4f47-8804-f47cb685d347
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T03:52:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6d042830-a0ea-4eb9-947c-8f8dd5fc93a0 # Related Blog Selector
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3432bb81-adc7-42dc-9a11-d1692600a59e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6b5b4335-d897-4bc7-bf76-f18089835051
+        userCondition: null
+handle: recentBlogs
+hasTitleField: false
+icon: null
+name: 'Recent Blogs'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

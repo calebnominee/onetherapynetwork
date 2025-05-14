@@ -1,0 +1,89 @@
+color: null
+fieldLayouts:
+  a4574d7f-0818-474b-813d-3fcaf798d582:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T03:18:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2841c3f0-3bbb-47b5-985b-1e74cb9dfada
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:18:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 42eea3c2-2f84-43d8-a495-647d4994a8d5 # Text - Multiline
+            handle: copy
+            includeInCards: false
+            instructions: null
+            label: Copy
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c13f40a-bdc2-411a-8009-4a88e9bf501b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:18:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0b199c11-0b79-4e4b-b931-f9c85e23a667 # Link / Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d08fea51-e233-4867-bfb4-96eae606df89
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:18:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a1421a3-4de2-4523-ba9b-a7aef5d9f135
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f3cb3d46-97fe-4053-9aa7-566cfa35076e
+        userCondition: null
+handle: homepageHero
+hasTitleField: false
+icon: null
+name: 'Homepage Hero'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,112 @@
+color: null
+fieldLayouts:
+  ceb41499-ecd6-4d41-bd23-42df13d96627:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T03:27:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: tabButton
+            includeInCards: false
+            instructions: null
+            label: 'Tab Button'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3914639e-8ae9-4fbd-87bb-3a7a348f6d23
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:27:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a8aaec03-fb62-492a-ba1f-b822839be372 # Questions
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 294edb80-7f04-456f-8211-141db480b32f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:31:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0b199c11-0b79-4e4b-b931-f9c85e23a667 # Link / Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4ca45127-6d83-414d-a133-2cefdcd15577
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:31:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fa59b73c-4193-4d7e-a42a-2bda6d535687 # Lightswitch - Default On
+            handle: showCalendly
+            includeInCards: false
+            instructions: null
+            label: 'Show Calendly?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c8736-6cca-488f-bf42-24ee7f280159
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Top Content'
+        uid: 9f073ad0-0b72-4bd1-a004-49754b5c2520
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T03:44:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 69b71247-c0c6-4339-b528-2d8b66d72119 # Page Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 868c9d77-b3ef-4f3a-a680-047efca57e29
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Secondary Content'
+        uid: 8c2db539-142b-4061-9116-3782950bea1d
+        userCondition: null
+handle: homepageTab
+hasTitleField: false
+icon: null
+name: 'Homepage Tab'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ tabButton }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

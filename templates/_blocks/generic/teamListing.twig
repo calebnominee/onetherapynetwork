@@ -1,0 +1,66 @@
+{% set headline = block.headline ?? 'Meet your new central office.' %}
+{% set teamMembers = craft.entries.section('team').eagerly().all() %}
+
+<section class="about-grid -animation-trigger">
+	<div class="small-12 cell fade-up Mx(1rem)">
+		<h2 class="header-one Mb(5rem)">Meet your new central office.</h2>
+	</div>
+	{% for member in teamMembers %}
+
+		{% set image = member.headshot.eagerly().one() ?? craft.entries.section('globalSettings').eagerly().one().fallbackHeadshot.eagerly().one() %}
+
+		<div class="team-headshot -animation-trigger">
+			{% if image|length > 0 %}
+				<img alt="{{ member.title }}" title="{{ member.title }} - {{ member.position }}" class="Mb(2rem) clip-path-up" src="{{ image.getUrl('square') }}"/>
+			{% else %}
+				<img alt="Placeholder Headshot" title="Placeholder Headshot" class="Mb(2rem) clip-path-up" src="{{ siteUrl }}assets/images/PlaceholderHeadshot.png"/>
+			{% endif %}
+			<h2 class="header-two fade-up">{{ member.title }}</h2>
+			<h3 class="paragraph My(1rem) fade-up transition-delay-2">{{ member.position }}</h3>
+			<button data-bio="{{ member.slug }}" class="link -color-dark-grey fade-up transition-delay-4">More
+			</button>
+		</div>
+
+	{% endfor %}
+
+</section>
+
+{% for member in teamMembers %}
+
+
+	{% set img = member.headshot.eagerly().one() ?? craft.entries.section('globalSettings').eagerly().one().fallbackHeadshot.eagerly().one()%}
+
+
+	{% if img %}
+		{% set imgStyles = "background-image: url('" ~ img.getUrl() ~ "'); background-size: cover;"|raw %}
+
+		{% if img.hasFocalPoint %}
+			{% set x = img.focalPoint | first * 100 ~ '%' %}
+			{% set y = img.focalPoint | last * 100 ~ '%' %}
+			{% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
+		{% endif %}
+	{% endif %}
+
+	<aside class="team-bio grid-x" id="{{ member.slug }}">
+
+		<div class="bio-overlay small-12 medium-2 cell"></div>
+		<div class="bio-content small-12 medium-10 cell">
+			<img alt="Cross" data-bio="{{ member.slug }}" class="cross" src="{{ siteUrl }}assets/images/cross.svg"/>
+			<div class="grid-x">
+				<div class="team-bio-content small-12 medium-7 cell">
+					<h1>{{ member.title }}</h1>
+					<h2>{{ member.position }}</h2>
+					<div class="bio-line Mt(3rem) Mb(3rem)"></div>
+					<div class="Mb(3rem)">
+						{{ member.biography }}
+
+					</div>
+					<button data-bio="{{ member.slug }}" class="button -solid -red">Return to Team</button>
+				</div>
+				<div class="small-12 medium-5 cell" style="{{ imgStyles is defined ? imgStyles }}"></div>
+			</div>
+		</div>
+
+	</aside>
+
+{% endfor %}

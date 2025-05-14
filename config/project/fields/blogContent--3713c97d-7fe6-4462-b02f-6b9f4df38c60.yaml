@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: blogContent
+instructions: null
+name: 'Blog Content'
+searchable: false
+settings:
+  createButtonLabel: 'New block'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 8e4311c3-e741-4fde-ac2a-9ea19332b7b0 # Text Block
+    -
+      __assoc__:
+        -
+          - uid
+          - 170bcc3e-5779-4c46-84db-d8f7dba672da # Callout
+    -
+      __assoc__:
+        -
+          - uid
+          - 0f25eaa5-7aa9-4f37-b22b-5d5cc3e33a50 # Form Embed
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

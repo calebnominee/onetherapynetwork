@@ -1,0 +1,41 @@
+columnSuffix: null
+handle: blogBuilder
+instructions: null
+name: 'Blog Builder'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 656f6195-c170-449d-a656-2f00315bab20 # Primary Blog Content
+    -
+      __assoc__:
+        -
+          - uid
+          - bec78600-6a15-422b-9da6-dc4c7e0f1280 # Recent Blogs
+    -
+      __assoc__:
+        -
+          - uid
+          - 3d39f1ef-dca6-42f1-a342-881554f443d8 # Banner Callout
+    -
+      __assoc__:
+        -
+          - uid
+          - e72b2499-d930-4ad6-976f-1d38f7902af2 # Author Attribution
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

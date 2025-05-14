@@ -1,0 +1,14 @@
+{% set image = hero.image.eagerly().one() ?? globalSettings.fallbackBannerImage.eagerly().one() %}
+{% set headline = hero.headline %}
+{% set copy = hero.copy %}
+
+<section class="section-container -full-padded -animation-trigger -bg-grey grid-x align-middle Pt(25vh)! Pend(0px)!">
+	<div class="half-block content -left fade-up small-order-2 medium-order-1 Mt(3rem)--sm">
+		<h1 class="header-two fade-up -after-navy Mb(2rem)">{{ headline }}</h1>
+		{{ copy }}
+	</div>
+
+	<div class="half-block -flush-right Ta(start) pin2 medium-order-2 small-order-1">
+		<img alt="{{ image.alt }}" title="{{ image.title }}" class="clip-path-up shrink-trans" src="{{ image.url }}"/>
+	</div>
+</section>

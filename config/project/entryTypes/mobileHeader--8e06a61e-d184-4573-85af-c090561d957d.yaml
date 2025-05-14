@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  49b534df-9779-4008-b5eb-c3c8560798f0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T05:18:20+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e708bb43-4f25-4fe9-8486-857d105e6663
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 123b8509-da71-4ea7-9041-e797d976d8a0
+        userCondition: null
+handle: mobileHeader
+hasTitleField: false
+icon: null
+name: 'Mobile Header'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline|slice(0, 20) }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

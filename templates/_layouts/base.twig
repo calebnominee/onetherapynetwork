@@ -1,0 +1,63 @@
+{%- minify -%}
+
+<!doctype html>
+<html class="no-js" lang="{{ craft.app.language|slice(0,2) }}">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132743728-4"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'UA-132743728-4');
+		</script>
+
+		{# {{ craft.googleTagManager.headSection() }} #}
+
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content=""/>
+		<meta name="description" content=""/>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+
+		<meta name="og:title" content="{{ entry.title ?? category.title }} - One Therapy"/>
+		<meta name="og:url" content="{{ entry.url ?? category.url }}"/>
+		<meta name="og:description" content=""/>
+		<meta name="og:image" content=""/>
+		<meta name="og:image:width" content="1920"/>
+		<meta name="og:image:height" content="1080"/>
+
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:site" content=""/>
+		<meta name="twitter:title" content=""/>
+		<meta name="twitter:description" content=""/>
+		<meta
+		name="twitter:image" content=""/>
+
+		{#    <title>{{ entry.pageTitle ?? entry.title ?? category.title }} | One Therapy Network</title>#}
+
+		<link rel="shortcut icon" href="{{ siteUrl }}assets/images/favicon.png" type="image/x-icon">
+
+		{#	<link rel="canonical" href="{{ entry.url }}"/>#}
+
+		<!-- Stylesheet -->
+		<link href="{{ siteUrl }}assets/css/foundation.min.css" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500" rel="stylesheet">
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<link href="{{ siteUrl }}assets/css/style.css" rel="stylesheet"/>
+		<link href="{{ siteUrl }}assets/css/css-additions.css" rel="stylesheet"/> {% block head %}{% endblock %}
+
+		</head>
+
+		<body class="is-loading" style="position: relative;"> {% block body %}{% endblock %}
+			</body>
+
+		</html>
+
+		{%- endminify -%}

@@ -1,0 +1,30 @@
+color: null
+fieldLayouts:
+  401ac819-5893-4253-97cb-e6f5051a272f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T02:25:42+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Nothing to configure here - the Jazz embed will be automatically added.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 0ffdd3e6-cbff-4f2c-9a45-543263a2b4b6
+            userCondition: null
+        name: Content
+        uid: 170a4112-e203-4960-8feb-d0ac85c3f536
+        userCondition: null
+handle: careersEmbed
+hasTitleField: false
+icon: null
+name: 'Careers Embed'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Careers Embed'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

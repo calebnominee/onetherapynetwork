@@ -1,0 +1,25 @@
+<div class="parallax-spacer" id="par-trigger"></div>
+
+{% set timeline = block.timeline.eagerly().all() %}
+
+
+<section class="comparison-timeline align-stretch">
+	<div class="small-12 medium-6 -left cell hide-for-small-only">
+		<div class="compare-before Ta(end)">
+			<div class="W(100%) D(ib)">
+				<h2 class="text-center">The traditional approach</h2>
+			</div>
+		</div>
+	</div>
+	<div class="small-12 medium-6 -right cell hide-for-small-only">
+		<div class="compare-after Ta(start)">
+			<div class="W(100%) D(ib)">
+				<h2 class="text-center">A new way</h2>
+			</div>
+		</div>
+	</div>
+
+	{% for block in timeline %}
+		{% include "_blocks/generic/timelineBlock/" ~ block.type.handle %}
+	{% endfor %}
+</section>

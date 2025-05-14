@@ -1,0 +1,130 @@
+footer .spacer {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+footer .copyright {
+	color: #9a9a9a;
+}
+
+footer .copyright a {
+	color: #9a9a9a;
+}
+
+@media (max-width: 40em) {
+	footer .spacer {
+		padding: 1.5rem;
+	}
+}
+
+#call {
+	padding: 3rem 0px;
+}
+
+.blue {
+	color: #161049;
+}
+
+.top-spacer {
+	margin-top: 25px !important;
+}
+
+.dropdown-arrow {
+	border-left: 1px solid #161049;
+	border-bottom: 1px solid #161049;
+	display: inline-block;
+	position: absolute;
+	right: -15px;
+	top: 1px;
+	width: 8px;
+	height: 8px;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.dropdown-arrow.reversed {
+	top: 5px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.link:hover .dropdown-arrow {
+	border-left-color: #d98019;
+	border-bottom-color: #d98019;
+}
+
+.bx-controls {
+	padding-right: 0.9375rem;
+}
+
+@media only screen and (max-width: 640px) {
+	.comparison-timeline > .-left {
+		background: #161049;
+	}
+	.comparison-timeline > .-right {
+		background: #dddeda;
+	}
+	.compare-before,
+	.compare-after {
+		padding-top: 5rem;
+		width: 100% !important;
+	}
+	.compare-before .paragraph,
+	.compare-after .paragraph {
+		width: 100%;
+		max-width: none;
+		text-align: center;
+	}
+	.compare-before .paragraph {
+		color: #fff;
+	}
+}
+
+main {
+	margin-top: 89px;
+}
+
+span.categories-title {
+	color: #161049;
+	display: block;
+	font-family: Cormorant Garamond, Garamond, serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.375em;
+	letter-spacing: 0.033em;
+	margin: 0 8px 12px 0;
+}
+
+span.categories-title.-inline {
+	display: inline;
+	margin: 0 8px 0 0;
+}
+
+.button.-navy:hover {
+	background-color: transparent;
+	color: #161049;
+}
+
+.button.-bg-dark-grey {
+	color: white;
+}
+
+.button.-bg-dark-grey:hover {
+	background-color: transparent !important;
+	border-color: #9a9a9a;
+	color: #9a9a9a;
+}
+
+.line-callout h2 {
+	margin-bottom: 0px;
+}

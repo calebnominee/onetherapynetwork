@@ -1,0 +1,21 @@
+{% set headline = block.headline ?? 'Further<br> Reading' %}
+{% set blogs = block.relatedBlogsSelector.eagerly().all() ?? craft.entries.section('blog').id('not ' ~ entryId).limit(2).all() %}
+
+<section class="section-container -full-padded">
+	<div class="small-12 medium-4 cell Mb(3rem)--sm">
+		<h2 class="header-one">{{ headline|raw }}</h2>
+	</div>
+	<div class="small-12 medium-8 cell">
+		<div class="grid-x grid-padding-x">
+			{% for blog in blogs %}
+				{% include '_components/cards/relatedBlogCard' with {
+                    thumbnail: blog.thumbnail.eagerly().one() ?? blog.featuredImage.eagerly().one(),
+                    title: blog.title,
+                    excerpt: blog.excerpt,
+                    url: blog.url,
+                    index: loop.index
+                } only %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

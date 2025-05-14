@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: faqSelector
+instructions: "If left blank, all active FAQs will be included.\r\n"
+name: 'FAQ Selector'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:2cfd1887-844f-40f9-b419-34d24f6381a6' # FAQs
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

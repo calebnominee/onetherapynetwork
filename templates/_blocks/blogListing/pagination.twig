@@ -1,0 +1,29 @@
+<section class="blog-paginate -animation-trigger align-center align-middle">
+	<div class="prev shrink cell fade-up">
+		{% if pageInfo.prevUrl|length %}
+			<a href="{{ pageInfo.prevUrl }}">
+			{% endif %}
+			<img alt="Arrow Left" title="Arrow Left" class="arrow" src="{{ siteUrl }}assets/images/arrow-left.svg"/>
+			{% if pageInfo.prevUrl|length %}
+			</a>
+		{% endif %}
+	</div>
+	<div class="blog-numbers shrink cell fade-up">
+		{% for page, url in pageInfo.getPrevUrls(2) %}
+			<a href="{{ url }}" class="link">{{ page }}</a>
+		{% endfor %}
+		<a class="link">{{ pageInfo.currentPage }}</a>
+		{% for page, url in pageInfo.getNextUrls(2) %}
+			<a href="{{ url }}" class="link">{{ page }}</a>
+		{% endfor %}
+	</div>
+	<div class="next shrink cell fade-up">
+		{% if pageInfo.nextUrl|length %}
+			<a href="{{ pageInfo.nextUrl }}">
+			{% endif %}
+			<img alt="Arrow Right" title="Arrow Right" class="arrow" src="{{ siteUrl }}assets/images/arrow-right.svg"/>
+			{% if pageInfo.nextUrl|length %}
+			</a>
+		{% endif %}
+	</div>
+</section>

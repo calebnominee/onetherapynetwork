@@ -1,0 +1,91 @@
+columnSuffix: null
+handle: pageBuilder
+instructions: null
+name: 'Page Builder'
+searchable: false
+settings:
+  createButtonLabel: 'New block'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 3d39f1ef-dca6-42f1-a342-881554f443d8 # Banner Callout
+    -
+      __assoc__:
+        -
+          - uid
+          - a409a273-87d4-47f8-bbf7-2e39a93bd6c6 # Calendly Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - fe1a3d03-8674-4374-bb2c-56c90cfff222 # Careers Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - ee488df3-3fc8-46a1-bfd1-d0a8f35bc6fb # Case Study
+    -
+      __assoc__:
+        -
+          - uid
+          - d9d39b81-9a88-4405-a3b2-7d7bc9aa475a # FAQs
+    -
+      __assoc__:
+        -
+          - uid
+          - 8fa4cfad-795a-4215-8347-99b5c22be720 # Featured Blog
+    -
+      __assoc__:
+        -
+          - uid
+          - 0f25eaa5-7aa9-4f37-b22b-5d5cc3e33a50 # Form Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - ecc85d6a-2904-458b-902e-70d61d9c378c # Inline Call to Action
+    -
+      __assoc__:
+        -
+          - uid
+          - 431ff8c5-3ec4-4e8d-9ddf-81f9f3652d53 # Newsletter Signup
+    -
+      __assoc__:
+        -
+          - uid
+          - 2fbdef88-e493-4e56-8414-fdaefea8111e # Split Content
+    -
+      __assoc__:
+        -
+          - uid
+          - 0948fd3e-9624-45db-926b-4fdde6262710 # Tabbed Section
+    -
+      __assoc__:
+        -
+          - uid
+          - c64b9e5a-611b-4185-a351-6c4a78f15a50 # Team Listing
+    -
+      __assoc__:
+        -
+          - uid
+          - 2232d4f5-5cd2-486c-a20c-81992787e633 # Testimonials
+    -
+      __assoc__:
+        -
+          - uid
+          - 9b6a920b-d80e-453e-84f7-3705873f7f2a # Timeline
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: relatedBlogSelector
+instructions: 'Select up to 2 related blog posts. If left blank, the two most recent will be selected.'
+name: 'Related Blog Selector'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 2
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:d8298ca5-3785-4f41-bd3f-909cc81b5a4a' # Blog
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

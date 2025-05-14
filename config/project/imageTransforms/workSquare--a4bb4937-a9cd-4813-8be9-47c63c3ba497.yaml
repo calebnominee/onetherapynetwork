@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: workSquare
+height: 1000
+interlace: none
+mode: crop
+name: 'Work Square'
+position: center-center
+quality: null
+upscale: true
+width: 1000

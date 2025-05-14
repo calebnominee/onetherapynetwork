@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: caseStudyBlocks
+instructions: null
+name: 'Case Study Blocks'
+searchable: false
+settings:
+  createButtonLabel: 'Add block'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - f91fcdea-f3d2-414e-9389-43881860e4aa # Case Study Block
+    -
+      __assoc__:
+        -
+          - uid
+          - 9c04c783-6885-48a7-988e-8ca2708adb1c # Section Header
+    -
+      __assoc__:
+        -
+          - uid
+          - 6ef4511a-c400-42dc-a704-e24d430676cb # Video Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

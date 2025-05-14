@@ -1,0 +1,21 @@
+{% extends '_layouts/global' %}
+
+{% block site %}
+
+<section class="page-banner -animation-trigger -centered-both" style="background-image: url('{{ siteUrl }}assets/images/pattern.svg');">
+	<div class="floating-box fade-up transition-delay-2 Mt(0px)!--sm">
+		<h1 class="-center fade-up transition-delay-4">Page Not Found</h1>
+		<div class="grid-x align-center">
+			<div class="small-12 medium-6 cell">
+				<p class="top-spacer fade-up transition-delay-5">Click
+					<a href="/">here</a>
+					to return to the homepage.</p>
+				{# TODO #}
+				{# Once searching is implemented, add search bar #}
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{% endblock %}

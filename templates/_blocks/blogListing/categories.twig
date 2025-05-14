@@ -1,0 +1,15 @@
+{% set categories = craft.entries.section('blogCategories').all() %}
+
+<section class="blog-nav grid-x align-bottom">
+    <div class="small-12 medium-shrink cell">
+        <h2 class="header-one">All Posts</h2>
+    </div>
+    {% if categories|length %}
+        <div class="small-12 medium-auto cell text-right hide-for-small-only">
+            <span class="categories-title -inline">Categories:</span>
+            {% for category in categories %}
+                <a class="button -bg-dark-grey -color-white fade-up transition-delay-2" href="{{ category.url }}">{{ category.title }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>

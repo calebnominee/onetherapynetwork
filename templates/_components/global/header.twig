@@ -1,0 +1,39 @@
+<header class="main-header grid-x align-middle" id="main-header">
+	<div class="shrink cell">
+		<a href="{{ siteUrl }}">
+			<img class="header-logo" alt="One Therapy Network Logo" src="{{ siteUrl }}assets/images/navy_logo.svg"/>
+		</a>
+	</div>
+	<div class="auto cell hide-for-large text-right">
+		<img alt="hamburger menu icon" data-menu="open" class="hamburger" src="{{ siteUrl }}assets/images/hamburger.svg"/>
+	</div>
+	<nav class="auto cell text-right hide-for-small show-for-large">
+		<a href="{{ siteUrl }}about-us" class="paragraph Px(1rem) {% if craft.app.request.pathInfo == 'about-us' %}-thicc{% endif %}">About Us</a>
+		<a href="{{ siteUrl }}a-better-way" class="paragraph Px(1rem) {% if craft.app.request.pathInfo == 'a-better-way' %}-thicc{% endif %}">A Better Way</a>
+		<a href="{{ siteUrl }}member-benefits" class="paragraph  Px(1rem) {% if craft.app.request.pathInfo == 'member-benefits' %}-thicc{% endif %}">Member Benefits</a>
+		<a href="{{ siteUrl }}blog" class="paragraph Px(1rem) {% if craft.app.request.pathInfo == 'blog' %}-thicc{% endif %}">Blog</a>
+		<a href="{{ siteUrl }}careers" class="paragraph Px(1rem) {% if craft.app.request.pathInfo == 'careers' %}-thicc{% endif %}">Careers</a>
+		<a href="{{ siteUrl }}join-our-community" class="button -navy {% if craft.app.request.pathInfo == 'join-our-community' %}-thicc{% endif %}">Join Our Community</a>
+	</nav>
+</header>
+
+<div id="page-overlay" class="page-overlay"></div>
+<menu id="main-menu" class="main-menu align-middle">
+	<div class="menu-header small-12 cell">
+		<div class="grid-x align-middle">
+			<div class="shrink cell">
+				<img class="logo" src="{{ siteUrl }}assets/images/icon.svg"/>
+			</div>
+			<div class="auto cell Pstart(2rem) text-right">
+				<img alt="menu close button" data-menu="close" class="cross" src="{{ siteUrl }}assets/images/cross.svg"/>
+			</div>
+		</div>
+	</div>
+	<div class="small-12 cell">
+		<a href="{{ siteUrl }}about-us" class="paragraph Px(1rem)">About Us</a>
+		<a href="{{ siteUrl }}a-better-way" class="paragraph Px(1rem)">A Better Way</a>
+		<a href="{{ siteUrl }}member-benefits" class="paragraph  Px(1rem)">Member Benefits</a>
+		<a href="{{ siteUrl }}blog" class="paragraph Px(1rem)">Blog</a>
+		<a href="{{ siteUrl }}join-our-community" class="paragraph">Join Our Community</a>
+	</div>
+</menu>

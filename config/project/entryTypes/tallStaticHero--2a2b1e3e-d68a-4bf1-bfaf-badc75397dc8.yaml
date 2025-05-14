@@ -1,0 +1,106 @@
+color: null
+fieldLayouts:
+  6b8c2349-1d30-42f3-8899-a2805035c32a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T02:54:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: leftColumnHeadline
+            includeInCards: false
+            instructions: null
+            label: 'Left Column Headline'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b51fe4d0-b9c4-4128-b421-b5bdbf5658f8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T02:54:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43f8a56f-92dc-4caa-be2b-774abc0d3c47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T02:54:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: rightColumnHeadline
+            includeInCards: false
+            instructions: null
+            label: 'Right Column Headline'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 300a6906-9f00-40cb-9be5-cce92bb54bfe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T02:54:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7f0dd947-99d8-4456-93f3-4ce4f6162a3f # Rich Text - Simple
+            handle: copy
+            includeInCards: false
+            instructions: null
+            label: Copy
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07f50eb7-75f0-48b7-b4b8-be0e45e88ab1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T02:54:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 42eea3c2-2f84-43d8-a495-647d4994a8d5 # Text - Multiline
+            handle: subHeroCopy
+            includeInCards: false
+            instructions: null
+            label: 'Sub-Hero Copy'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65b47727-d005-4da2-bb94-c1ee515003e6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d8e75b40-8d30-4b2d-9337-19cc86640777
+        userCondition: null
+handle: tallStaticHero
+hasTitleField: false
+icon: null
+name: 'Tall Static Hero'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

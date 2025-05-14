@@ -1,0 +1,106 @@
+color: null
+fieldLayouts:
+  a917c07b-ce4f-45b6-9473-cf778612c8e8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T05:23:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 537f10f0-17ae-4d96-a695-426fa0ac4986
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T05:23:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: subheadline
+            includeInCards: false
+            instructions: null
+            label: Subheadline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7cfd15cb-3cd3-42db-a013-278602afd070
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T05:23:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: copy
+            includeInCards: false
+            instructions: null
+            label: Copy
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec52ed62-3ac6-4f8f-8433-c19a6d35e7d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T05:23:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: videoEmbed
+            includeInCards: false
+            instructions: 'Put in youtube or vimeo embed here. Use only the part surround by <iframe></iframe>.'
+            label: 'Video Embed'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f64e2cc8-913e-4195-be74-d848408b467b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T05:23:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 923d8646-3be2-4308-9885-6a849083e88b # Image Position - L/R
+            handle: videoPosition
+            includeInCards: false
+            instructions: null
+            label: 'Video Position'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5bfe051-b056-49b6-b1a0-6af10dfd5e25
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b384f201-3e8c-4a8a-8c5e-359246168e56
+        userCondition: null
+handle: videoBlock
+hasTitleField: false
+icon: null
+name: 'Video Block'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

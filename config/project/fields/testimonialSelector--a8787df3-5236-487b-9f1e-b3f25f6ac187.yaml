@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: testimonialSelector
+instructions: 'If left blank, the first 5 testimonials will appear'
+name: 'Testimonial Selector'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 5
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:b1fe4d99-7404-4809-ba1c-759f2742d0ef' # Testimonials
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

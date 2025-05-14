@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  920ff94b-dab0-4f9b-8b43-70533272f977:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T03:23:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0b199c11-0b79-4e4b-b931-f9c85e23a667 # Link / Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b61d895-b02a-45f3-8e2d-a5a6a6cf9ebf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c501967d-2540-470f-ae68-99726bcfd4b1
+        userCondition: null
+handle: buttonLink
+hasTitleField: false
+icon: null
+name: 'Button Link'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ linkButton.label }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

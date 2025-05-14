@@ -1,0 +1,55 @@
+color: null
+fieldLayouts:
+  d9cafcb9-fe52-44c8-b79c-dcaac9ed125c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T02:27:20+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9159c317-74d6-4a5b-90e7-24e8bd3d41e8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T02:45:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 42eea3c2-2f84-43d8-a495-647d4994a8d5 # Text - Multiline
+            handle: copy
+            includeInCards: false
+            instructions: null
+            label: Copy
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6444a4a2-94d7-4ac0-9539-e23af4dc0172
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c6077b99-3608-45e3-ab19-8dd562d10890
+        userCondition: null
+handle: shortParallaxHero
+hasTitleField: false
+icon: null
+name: 'Short Parallax Hero'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

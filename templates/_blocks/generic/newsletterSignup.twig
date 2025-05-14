@@ -1,0 +1,37 @@
+{% set headline = block.headline ?? 'Join Our Community' %}
+
+<section class="section-container -narrow -animation-trigger Py(8rem)!">
+	<div class="small-12 cell">
+		<div class="grid-x align-bottom">
+			<div class="small-12 medium-auto cell Pend(4rem) fade-up">
+				<h2>{{ headline }}</h2>
+			</div>
+
+			<div class="small-12 medium-auto Mb(2rem)--sm Mt(2rem)--sm fade-up transition-delay-2">
+				<form action="https://wearenominee.us20.list-manage.com/subscribe/post?u=284d17cffbcbe990c99b6bb2c&amp;id=51c95d9220" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+					{{ redirectInput('thank-you') }}
+					<div class="grid-x" id="mc_embed_signup_scroll">
+						<div class="small-12 medium-auto cell Mb(2rem)--sm Mt(2rem)--sm">
+							<div class="mc-field-group">
+								<input class="-orange W(100%) Mb(0rem)!" type="email" value="" name="EMAIL" class="D(b) W(100%) Mb(1rem)!" id="footer-signup" placeholder="Email">
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+						</div>
+						<div class="small-12 medium-shrink cell Pstart(4rem)--md">
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_284d17cffbcbe990c99b6bb2c_51c95d9220" tabindex="-1" value="">
+							</div>
+							<div class="clear">
+								<button class="button -grey -outline" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

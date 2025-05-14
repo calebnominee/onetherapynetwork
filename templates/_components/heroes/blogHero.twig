@@ -1,0 +1,16 @@
+<section class="-animation-trigger grid-x align-middle Pt(20vh)--md Pt(15vh) Pb(0rem)">
+	<div class="half-block content -left Mb(2rem)">
+		<h1 class="-underline grow-after Mb(2rem) pin2">{{ headline }}</h1>
+		<p class="pin-subtle-3">
+			{% if subheadline|length %}
+				{{ subheadline }}<br>
+			{% endif %}
+			{{ postDate }}</p>
+	</div>
+
+	<div class="half-block -flush-left Ta(end)">
+		{% if heroImage %}
+			<img alt="{{ heroImage.alt }}" title="{{ heroImage.title }}" class="clip-path-up shrink" src="{{ heroImage.url }}"/>
+		{% endif %}
+	</div>
+</section>

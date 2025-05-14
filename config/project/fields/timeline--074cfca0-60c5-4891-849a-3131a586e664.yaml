@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: timeline
+instructions: null
+name: Timeline
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 94571035-5f66-4e45-89b4-f7e36a3e603f # Before
+    -
+      __assoc__:
+        -
+          - uid
+          - a4400310-3e62-495d-813b-1c31362f5ddb # After
+    -
+      __assoc__:
+        -
+          - uid
+          - 8e06a61e-d184-4573-85af-c090561d957d # Mobile Header
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

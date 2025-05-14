@@ -1,0 +1,46 @@
+columnSuffix: null
+handle: hero
+instructions: null
+name: Hero
+searchable: false
+settings:
+  createButtonLabel: 'Insert Hero'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - fa7dea2f-cd80-4e27-9e64-678f9a99df1a # Short Parallax Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - 8234205e-f069-4229-bb99-3b178b18fc67 # Tall Parallax Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - 11443a96-783d-4acf-8c1f-f07f6604c7f5 # Split Content Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - 2a2b1e3e-d68a-4bf1-bfaf-badc75397dc8 # Tall Static Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - f0ee42f3-fff2-4fa2-a479-7af9e17a7f97 # Homepage Hero
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

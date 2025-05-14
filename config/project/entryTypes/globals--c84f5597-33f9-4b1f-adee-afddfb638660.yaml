@@ -1,0 +1,85 @@
+color: null
+fieldLayouts:
+  ef169cc0-d8f4-4a9e-926d-e89e14595b3d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-05-14T00:48:26+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8116be1b-77e2-4f4d-a57c-f4bd8033027e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T00:49:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Image
+            handle: fallbackBannerImage
+            includeInCards: false
+            instructions: null
+            label: 'Fallback Banner Image'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7abc74c3-d62f-46b4-87ab-a3d2981dae28
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T01:15:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Image
+            handle: fallbackHeadshot
+            includeInCards: false
+            instructions: null
+            label: 'Fallback Headshot'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cfdb1e23-50d2-4480-92cb-626a995d282c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4f0d5aab-7bf2-4c46-8792-8c0eb74302dc
+        userCondition: null
+handle: globals
+hasTitleField: true
+icon: null
+name: Globals
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

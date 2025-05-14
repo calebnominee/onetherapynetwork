@@ -1,0 +1,14 @@
+<div class="parallax-container" id="parallax-fade">
+	<section class="page-banner -full parallax clip-path-down -animation-trigger -centered-both" style="background-image: url('{{ siteUrl }}assets/images/pattern.svg');">
+		<div class="floating-box fade-up transition-delay-2 Mt(0px)!--sm">
+			<h1 class="-center fade-up transition-delay-4">{{ hero.headline }}</h1>
+			{% if hero.copy|length %}
+				<p class="-center fade-up transition-delay-6">{{ hero.copy }}</p>
+			{% endif %}
+		</div>
+		<div class="scroll-arrow hide-for-small-only">
+			<h4 class="-color-white">Scroll</h4>
+			<img alt="Scroll Down" title="Scroll Down" src="{{ siteUrl }}assets/images/scroll-arrow.svg"/>
+		</div>
+	</section>
+</div>

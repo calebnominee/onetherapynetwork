@@ -1,0 +1,62 @@
+{% set tabs = block.tabbedContent.all() %}
+
+<section class="-animation-trigger grid-x align-middle Pos(r) Py(5rem)">
+	<img class="Pos(a) T(2rem) Start(5vw) Start(10vw)--md W(75px) pin1" alt="Red triangle" title="Red triangle" src="{{ siteUrl }}assets/images/red-triangle.svg"/>
+	<img class="Pos(a) B(2rem) End(5vw) End(10vw)--md W(45px) pin3" alt="Orange circle" title="Orange circle" src="{{ siteUrl }}assets/images/orange-circle.svg"/>
+	<div class="full-block content -left -narrow">
+		<h2 class="header-one text-center Mb(2rem) fade-down">{{ block.headline}}</h2>
+		<div class="grid-x grid-padding-x align-center fade-up transition-delay-2">
+			{% for tab in tabs %}
+				<div class="shrink cell">
+					<button data-tab="{{ tab.tabButton|kebab}}" class="button -navy -outline {{ loop.first ? '-active Mb(1rem)--sm' : '' }}">{{ tab.tabButton }}</button>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="path-container -animation-trigger" id="path-container">
+	{% for tab in tabs %}
+
+		{% set headline = tab.tabButton %}
+		{% set questions = tab.questions.all() %}
+		{% set finalCount = 0 %}
+		{% set count = 1 %}
+		{% set buttonUrl = tab.linkButton.url ?? '/join-our-community' %}
+		{% set buttonText = tab.linkButton.label ?? 'Join Our Community' %}
+		{% set target = tab.linkButton.target ?? '_self' %}
+		{% set calendly = tab.includeCalendly ?? false %}
+
+		<div class="inner-section {{ not loop.first ? 'hide -animation-hold' : '' }}" id="{{ headline|kebab }}">
+
+			<section class="section-container">
+				<div class="full-block -narrow text-center">
+					{% for question in questions %}
+						<div class="paragraph -thicc -navy Mb(2rem) fade-up transition-delay-{{ count }} Maw(28em) Mx(a)">{{ question.copy }}</div>
+
+						{% if loop.last %}
+							{% set finalCount = loop.index + 1 %}
+						{% endif %}
+						{% if loop.index%2 == 0 %}
+							{% set count = count + 1 %}
+						{% endif %}
+					{% endfor %}
+					<div class="fade-up transition-delay-{{ finalCount }}">
+						<a class="button -red Mb(1rem)" href="{{ buttonUrl }}" target="{{ target }}">{{ buttonText }}</a>
+						{% if calendly %}
+							<p class="paragraph -color-dark-grey D(b) text-center">Still have questions?
+								<a class="paragraph -color-dark-grey -dec-underline D(ib)" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/weareone/30min'});return false;">Call
+																																																																																																			                                                                                                Us</a>
+							</p>
+						{% endif %}
+					</div>
+				</div>
+			</section>
+			{% for block in tab.pageBuilder.all() %}
+				{% include '_blocks/generic/' ~ block.type.handle %}
+			{% endfor %}
+
+		</div>
+
+	{% endfor %}
+</section>

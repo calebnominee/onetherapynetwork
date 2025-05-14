@@ -1,0 +1,31 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  -
+    uid: 0db1c752-7397-4846-ac49-1e49a643f252 # Blog
+handle: blog
+maxAuthors: 1
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  08c386f4-5a41-4c9f-8282-f6785af06bfc: # $CRAFT_SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/blog/entry.twig
+    uriFormat: 'blog/{slug}'
+structure:
+  maxLevels: 1
+  uid: e4592ba4-8db2-4eb1-85dd-581e104f42eb
+type: structure

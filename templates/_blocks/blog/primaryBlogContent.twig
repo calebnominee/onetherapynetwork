@@ -1,0 +1,7 @@
+{% set inlineBlocks = block.blogContent.eagerly().all() %}
+
+<section class="content-block grid-x align-center Pb(3rem)">
+	{% for block in inlineBlocks %}
+		{% include '_blocks/blog/inline/' ~ block.type.handle %}
+	{% endfor %}
+</section>

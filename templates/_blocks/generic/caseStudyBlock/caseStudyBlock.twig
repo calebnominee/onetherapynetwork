@@ -1,0 +1,29 @@
+{% set image = block.image.eagerly().one() %}
+{% set flushImage = block.flushImage %}
+{% set imagePosition = block.imagePositionLR %}
+{% set overline = block.overline %}
+{% set headline = block.headline %}
+{% set copy = block.copy %}
+
+<section class="section-container -animation-trigger {% if flushImage %}-flush{% endif %} grid-x align-middle">
+	<div class="half-block Ta(start) pin-subtle-2 {% if flushImage %}-flush{% endif %} {% if imagePosition == 'right' %}small-order-1 medium-order-2{% endif %}">
+		<div class="image-container clip-path-up shrink-trans">
+			<img alt="{{ image.alt }}" title="{{ image.title }}" class="image-inner" src="{{ image.url }}"/>
+		</div>
+	</div>
+
+	<div class="half-block content -left Mt(3rem)--sm">
+		{% if overline|length %}
+			<h4 class="header-four Mb(3rem) fade-down">{{ overline }}</h4>
+		{% endif %}
+		{% if headline|length %}
+			<h2 class="header-two grow-after fade-down -underline transition-delay-3">{{ headline }}</h2>
+		{% endif %}
+		{% if copy|length %}
+			<div class="fade-down transition-delay-6">
+				{{ copy }}
+			</div>
+		{% endif %}
+	</div>
+
+</section>

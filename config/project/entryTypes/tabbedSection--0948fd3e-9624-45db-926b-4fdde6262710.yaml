@@ -1,0 +1,55 @@
+color: null
+fieldLayouts:
+  e41dc060-99de-4781-95a4-51f9575d782f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T03:28:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d909db95-3c4c-45cc-9564-441aea5d8852
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T03:28:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5efb6453-b77e-4846-ac2c-be514d47ed01 # Tabbed Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d5f64dd-a270-4e3e-ae0c-ca575ffe0a32
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: eb0723d8-32b6-4784-b841-410a949782fa
+        userCondition: null
+handle: tabbedSection
+hasTitleField: false
+icon: null
+name: 'Tabbed Section'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

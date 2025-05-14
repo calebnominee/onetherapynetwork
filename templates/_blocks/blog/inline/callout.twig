@@ -1,0 +1,14 @@
+{% set leftBorder = block.leftBorder ?? false %}
+{% set text = block.text %}
+
+{% if leftBorder %}
+	<div class="line-callout small-12 cell -animation-trigger">
+		<div class="container Maw(600px)--md Mx(a) fade-up">
+			<h2>{{ text }}</h2>
+		</div>
+	</div>
+{% else %}
+	<div class="offset-callout small-12 medium-7 cell -animation-trigger Mt(3rem) Px(0px)!">
+		<h2 class="fade-up Maw(600px)--md Mx(a)">{{ text }}</h2>
+	</div>
+{% endif %}

@@ -1,0 +1,18 @@
+{% set image = block.image.eagerly().one() %}
+{% set headline = block.authorName %}
+{% set copy = block.authorPosition %}
+
+<section class="section-container -animation-trigger -bg-grey grid-x align-center align-middle Px(10vw)">
+	{% if image %}
+		<div class="small-12 medium-2 cell -flush Ta(end)--md Ta(start) Mb(2rem)--sm">
+			<img alt="{{ image.alt }}" title="{{ image.title }}" class="clip-path-up shrink W(100%) D(ib) Mx(a)" src="{{ image.url }}"/>
+		</div>
+	{% endif %}
+
+	{% if headline|length %}
+		<div class="small-12 text-center Mt(2rem) cell content -left">
+			<h3 class="{% if copy|length > 0 %}Mb(1rem){% else %}Mb(0px)!{% endif %}">{{ headline }}</h3>
+			{{ copy }}
+		</div>
+	{% endif %}
+</section>

@@ -1,0 +1,24 @@
+{% set image = hero.image.one %}
+{% set headline = hero.headline %}
+{% set copy = hero.copy %}
+{% set buttonUrl = hero.linkButton.url %}
+{% set buttonText = hero.linkButton.label %}
+{% set target = hero.linkButton.target %}
+
+{% if image %}
+	{% set imgStyles = "background-image: url('" ~ image.getUrl() ~ "');"|raw %}
+
+	{% if image.hasFocalPoint %}
+		{% set x = image.focalPoint | first * 100 ~ '%' %}
+		{% set y = image.focalPoint | last * 100 ~ '%' %}
+		{% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
+	{% endif %}
+{% endif %}
+
+<section class="page-banner -animation-trigger -full parallax -centered-both" style="{{ imgStyles is defined ? imgStyles }}; background-attachment: fixed;">
+	<div class="floating-box fade-up">
+		<h1 class="-underline -center fade-down grow-after transition-delay-3 Fz(2.3rem)">{{ headline }}</h1>
+		<p class="Mt(2rem) Px(10%) fade-down transition-delay-3">{{ copy }}</p>
+		<a class="button -red  fade-up transition-delay-6 D(ib) Mt(1rem)" href="{{ buttonUrl }}" target="{{ target }}">{{ buttonText }}</a>
+	</div>
+</section>

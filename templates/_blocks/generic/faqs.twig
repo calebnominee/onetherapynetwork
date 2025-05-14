@@ -1,0 +1,20 @@
+{% set faqs = block.faqSelector.all() %}
+{% if not faqs|length %}
+	{% set faqs = craft.entries.section('faqs').all() %}
+{% endif %}
+
+<section class="section-container align-center">
+	<div class="small-12 medium-10 large-8 cell">
+		{% for faq in faqs %}
+			<div class="dropdown">
+				<div class="header">
+					<h3>{{ faq.title }}</h3>
+					<div class="plus"></div>
+				</div>
+				<div class="body">
+					<p>{{ faq.answer }}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>

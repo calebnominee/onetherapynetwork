@@ -1,0 +1,91 @@
+color: null
+fieldLayouts:
+  21a3475b-1329-451c-a0a6-fe5cd4207d4d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-05-13T00:40:11+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cc319ddd-607a-4b27-ab03-ef0f82e5eb4c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T04:24:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 69b71247-c0c6-4339-b528-2d8b66d72119 # Page Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd570cb8-91d6-4e91-8344-8e3a8f677e8c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1806ef95-826b-4aed-88f1-7e55fa43e031
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T04:24:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 453f9294-407d-405a-b73b-d5b63aec2eaa # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 395aca2e-0339-4d7d-b88b-0efc99a4e28d
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 50ca6f65-c0f7-4b4f-a517-88ca5917f6f6
+        userCondition: null
+handle: category
+hasTitleField: true
+icon: null
+name: Category
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

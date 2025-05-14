@@ -1,0 +1,23 @@
+{% set testimonials = block.testimonialSelector.eagerly().all() %}
+{% if not testimonials|length %}
+	{% set testimonials = craft.entries.section("testimonials").limit(5).all() %}
+{% endif %}
+
+
+<section class="-animation-trigger -bg-grey grid-x align-middle Py(6rem)!--md Py(3rem)!">
+
+	<div class="full-block content -left -narrow fade-up">
+		<div id="slider">
+
+			{% for entry in testimonials %}
+				{% include "_components/cards/testimonialCard.twig" with {
+                    image: entry.headshot.eagerly().one(),
+                    headline: entry.title ?? '',
+                    copy: entry.copy ?? ''
+                } %}
+			{% endfor %}
+
+		</div>
+	</div>
+
+</section>

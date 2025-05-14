@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  4d34af20-e91f-4032-95cf-8dfacb9dff5c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T03:45:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3713c97d-7fe6-4462-b02f-6b9f4df38c60 # Blog Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c638175-1c17-4932-8f0f-11ac3b39ed20
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 16076615-138e-4c76-a102-8aa5b9a5ca3e
+        userCondition: null
+handle: primaryBlogContent
+hasTitleField: false
+icon: null
+name: 'Primary Blog Content'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

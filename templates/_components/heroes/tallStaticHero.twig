@@ -1,0 +1,38 @@
+{% set leftColumnHeadline = hero.leftColumnHeadline ?? entry.title %}
+{% set image = hero.image.eagerly().one() ?? entry.bannerImage.eagerly().one() %}
+{% set rightColumnHeadline = hero.rightColumnHeadline ?? '' %}
+{% set copy = hero.copy ?? '' %}
+{% set subHeroCopy = hero.subHeroCopy ?? '' %}
+
+
+<section class="section-container -animation-trigger grid-x align-stretch Pt(12rem)">
+	<div class="half-block -flush Ta(end) pin-subtle-2">
+		<div class="grid-y grid-frame align-justify">
+			<div class="shrink cell">
+				<h1 class="header-one fade-up Pstart(8vw)--md Mb(3rem) Ta(start)--sm">{{ leftColumnHeadline }}</h1>
+			</div>
+			<div class="shrink cell">
+				{% if image|length %}
+					<img alt="{{ image.alt }}" title="{{ image.title }}" class="clip-path-up shrink-trans" src="{{ image.url }}"/>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="half-block content -left Mt(3rem)--sm">
+		{% if rightColumnHeadline|length %}
+			<h2 class="header-two fade-up grow-after -underline">{{ rightColumnHeadline }}</h2>
+		{% endif %}
+		{% if copy|length %}
+			<div class="fade-up transition-delay-3 Mt(2rem)">
+				{{ copy }}
+			</div>
+		{% endif %}
+	</div>
+
+	{% if subHeroCopy|length %}
+		<div class="full-block Pt(6rem)--md Pt(1rem)!--sm Px(5vw)--sm Ta(start) Ta(c)--md fade-up transition-delay-3">
+			<p class="-thicc Mx(a) Maw(30em)--md">{{ subHeroCopy }}</p>
+		</div>
+	{% endif %}
+</section>

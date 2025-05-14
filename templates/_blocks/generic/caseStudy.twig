@@ -1,0 +1,17 @@
+{% if block.headline|length or block.subheadline|length or block.copy|length %}
+	{% include "_blocks/generic/caseStudyBlock/intro.twig" %}
+{% endif %}
+
+{% for block in block.caseStudyBlocks.all() %}
+
+	{% if block.type == 'sectionHeader' %}
+		{% include "_blocks/generic/caseStudyBlock/sectionHeader.twig" %}
+
+	{% elseif block.type == 'caseStudyBlock' %}
+		{% include "_blocks/generic/caseStudyBlock/caseStudyBlock.twig" %}
+
+	{% elseif block.type == 'videoBlock' %}
+		{% include "_blocks/generic/caseStudyBlock/videoBlock.twig" %}
+
+	{% endif %}
+{% endfor %}

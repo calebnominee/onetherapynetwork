@@ -1,0 +1,26 @@
+{% set headline = block.headline ?? '' %}
+{% set copy = block.copy ?? '' %}
+{% set image = block.image.eagerly().one() ?? [] %}
+{% set imagePosition = block.imagePosition ?? [] %}
+
+<div class="small-12 medium-6 -left cell -animation-trigger">
+	<div class="compare-before grid-y grid-frame Pos(r)">
+		<div class="shrink cell">
+			<h4 class="text-center -color-white hide-for-medium Mb(1rem) Tt(u) Pos(a)" style="top: 15px; left: 15px;">The traditional approach</h4>
+			<h3 class="paragraph -thicc fade-up D(b)">{{ headline }}</h3>
+
+			<p class="paragraph fade-up transition-delay-3 D(b)">{{ copy }}</p>
+		</div>
+		<div class="auto cell fade-up transition-delay-3 hide-for-small-only">
+			<div class="line-container">
+				{% if image|length > 0 %}
+					<img alt="{{ image.alt }}" title="{{ image.title }}" 
+                    class="image pin2 {% if imagePosition|length > 0 %}{% for class in imagePosition %} -{{ class }} {% endfor %}{% endif %} hide-for-small-only" src="{{ image.url }}"/>
+				{% endif %}
+				{% if not loop.last %}
+					<div class="line"></div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>

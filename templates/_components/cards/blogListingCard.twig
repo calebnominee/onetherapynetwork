@@ -1,0 +1,31 @@
+{% set textOrdering = isEven ? 'medium-order-1 small-order-2 content small-order-2 medium-order-1 Mt(3rem)--sm' : 'medium-order-2 small-order-2 -narrow content Mt(3rem)--sm' %}
+{% set imageOrdering = isEven ? 'medium-order-2 small-order-1 Ta(end)' : 'medium-order-1 small-order-1 Ta(start)' %}
+
+<article class="section-container -animation-trigger align-middle">
+	<div class="half-block {{ textOrdering }}">
+		<div class="My(2rem)">
+			<h1 class="header-one fade-up -underline grow-after Mb(2rem)">{{ title }}</h1>
+			<div class="fade-up transition-delay-3">
+				{{ excerpt }}
+				<div class="Mt(2rem)">
+					<a href="{{ url }}" class="link">Learn More</a>
+				</div>
+				{% if category|length %}
+					<div class="Mt(2rem)">
+						<span class="categories-title">Categories:
+						</span>
+						<a href="{{ category.url }}" class="button -bg-dark-grey -color-white fade-up transition-delay-2">
+							{{ category.title }}
+						</a>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="half-block -flush {{ imageOrdering }}">
+		<div class="image-container clip-path-up shrink-trans">
+			<img alt="{{ thumbnail.alt ?? thumbnail.title }}" title="{{ thumbnail.title }}" class="image-inner" src="{{ thumbnail.url }}"/>
+		</div>
+	</div>
+</article>

@@ -1,0 +1,30 @@
+color: null
+fieldLayouts:
+  89d4bdf6-cb18-4b80-b3f0-ebdd621fcd48:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T02:49:29+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'The latest Calendly embed will appear'
+            type: craft\fieldlayoutelements\Tip
+            uid: 933d3527-1b06-46d2-aae6-66464661029a
+            userCondition: null
+        name: Content
+        uid: 15a6a94d-1344-461a-83d8-2031b96437ad
+        userCondition: null
+handle: calendlyEmbed
+hasTitleField: false
+icon: null
+name: 'Calendly Embed'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Calendly Embed'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

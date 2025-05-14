@@ -1,0 +1,620 @@
+dateModified: 1747196642
+elementSources:
+  craft\elements\Entry:
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: 45386d91-21d8-412f-81dc-810e85a2b88f
+            values:
+              - f0cb56b1-e049-4ad0-a079-9cfe21d5f20d # Global Settings
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:c626e9a7-733c-495c-b329-8f3c70960b31'
+      label: 'Global Settings'
+      tableAttributes: '-'
+      type: custom
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:7b662bcd-ea91-4c91-86ce-c60348c664d1' # Pages
+      tableAttributes:
+        - 'field:453f9294-407d-405a-b73b-d5b63aec2eaa' # SEO
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:d8298ca5-3785-4f41-bd3f-909cc81b5a4a' # Blog
+      tableAttributes:
+        - 'field:453f9294-407d-405a-b73b-d5b63aec2eaa' # SEO
+      type: native
+    -
+      heading: Partials
+      type: heading
+    -
+      key: 'section:2cfd1887-844f-40f9-b419-34d24f6381a6' # FAQs
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: cards
+      disabled: false
+      key: 'section:db3255ed-b5fc-48fe-952a-59a8a7a187f0' # Team
+      tableAttributes:
+        - 'fieldInstance:3d14da98-2e1e-43c4-8143-751b64bbd4fd'
+        - 'fieldInstance:83841a15-d1aa-4007-9083-09e1bfb55ab7'
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:b1fe4d99-7404-4809-ba1c-759f2742d0ef' # Testimonials
+      tableAttributes:
+        - 'fieldInstance:d1e91326-879d-4186-b553-54653307ca9c'
+      type: native
+    -
+      heading: Categories
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:7d0bbfbb-3485-4b99-9eb8-4ad0662c679e' # Blog Categories
+      tableAttributes: '-'
+      type: native
+    -
+      heading: 'All Entries'
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: true
+      key: singles
+      tableAttributes:
+        - status
+        - link
+      type: native
+email:
+  fromEmail: $CRAFT_SYSTEM_EMAIL
+  fromName: $CRAFT_SITE_NAME
+  replyToEmail: null
+  template: _emails/system.twig
+  transportSettings:
+    apiKey: $MAILGUN_API_KEY
+    domain: $MAILGUN_DOMAIN
+    endpoint: $MAILGUN_ENDPOINT
+  transportType: craft\mailgun\MailgunAdapter
+fs:
+  servd:
+    hasUrls: false
+    name: Servd
+    settings:
+      cdnUrlPattern: ''
+      customSubfolder: ''
+      makeUploadsPublic: true
+      optimisePrefix: ''
+      optimiseUrlPattern: ''
+      projectSlug: ''
+      securityKey: ''
+      subfolder: production/
+    type: servd\AssetStorage\AssetsPlatform\Fs
+    url: 'https://craft-otn.files.svdcdn.com'
+meta:
+  __names__:
+    0b199c11-0b79-4e4b-b931-f9c85e23a667: 'Link / Button' # Link / Button
+    0db1c752-7397-4846-ac49-1e49a643f252: Blog # Blog
+    0f25eaa5-7aa9-4f37-b22b-5d5cc3e33a50: 'Form Embed' # Form Embed
+    1b9fb4ac-0712-4b38-b00f-dec3d3a20732: 'Work Three Quarters' # Work Three Quarters
+    1e8d748e-f2f3-45b3-9302-df96fdc51d6d: 'Slideshow Square' # Slideshow Square
+    2a2b1e3e-d68a-4bf1-bfaf-badc75397dc8: 'Tall Static Hero' # Tall Static Hero
+    2cfd1887-844f-40f9-b419-34d24f6381a6: FAQs # FAQs
+    2fbdef88-e493-4e56-8414-fdaefea8111e: 'Split Content' # Split Content
+    3b93f659-b09a-43f2-9ff4-39c540342ede: 'Lightswitch - Default Off' # Lightswitch - Default Off
+    3d39f1ef-dca6-42f1-a342-881554f443d8: 'Banner Callout' # Banner Callout
+    03d163a9-dbe0-4797-9f55-a00fe30985bb: 'Team Member' # Team Member
+    3eaa874c-5670-4fe8-8de8-beef7ddf842a: 'Image Position' # Image Position
+    5cbe08b7-b4bd-4a6b-be41-de9647b5eb19: Images # Images
+    5edecfcc-5a21-49d5-bc86-601bf4f3f473: 'Button Link' # Button Link
+    5efb6453-b77e-4846-ac2c-be514d47ed01: 'Tabbed Content' # Tabbed Content
+    6d042830-a0ea-4eb9-947c-8f8dd5fc93a0: 'Related Blog Selector' # Related Blog Selector
+    6d792fe4-471d-48ed-bc45-5fe112ba7e46: Image # Image
+    6ef4511a-c400-42dc-a704-e24d430676cb: 'Video Block' # Video Block
+    6fe413ae-c734-4aed-b954-95093d371dac: FAQ # FAQ
+    7b662bcd-ea91-4c91-86ce-c60348c664d1: Pages # Pages
+    7bf65ac5-9169-4bf8-8825-65fadd566946: New # New
+    7d0bbfbb-3485-4b99-9eb8-4ad0662c679e: 'Blog Categories' # Blog Categories
+    7f0dd947-99d8-4456-93f3-4ce4f6162a3f: 'Rich Text - Simple' # Rich Text - Simple
+    8b610edc-f2dd-46b6-9597-96fcbb6d302a: Simple # Simple
+    08c386f4-5a41-4c9f-8282-f6785af06bfc: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
+    8e06a61e-d184-4573-85af-c090561d957d: 'Mobile Header' # Mobile Header
+    8e4311c3-e741-4fde-ac2a-9ea19332b7b0: 'Text Block' # Text Block
+    8fa4cfad-795a-4215-8347-99b5c22be720: 'Featured Blog' # Featured Blog
+    9b6a920b-d80e-453e-84f7-3705873f7f2a: Timeline # Timeline
+    9c04c783-6885-48a7-988e-8ca2708adb1c: 'Section Header' # Section Header
+    19d6d897-1cde-4d59-914a-2bf8a23e7916: 'Public Schema' # Public Schema
+    32f7a25e-e4c7-4537-9cd9-1260b817567b: 'Big Ol Square' # Big Ol Square
+    42eea3c2-2f84-43d8-a495-647d4994a8d5: 'Text - Multiline' # Text - Multiline
+    49cf21f8-8ce0-456c-82dc-b6a0445dc171: 'FAQ Selector' # FAQ Selector
+    69b71247-c0c6-4339-b528-2d8b66d72119: 'Page Builder' # Page Builder
+    074cfca0-60c5-4891-849a-3131a586e664: Timeline # Timeline
+    74dfba30-bb7d-4755-be63-4903ff447e25: 'Homepage Tab' # Homepage Tab
+    170bcc3e-5779-4c46-84db-d8f7dba672da: Callout # Callout
+    431ff8c5-3ec4-4e8d-9ddf-81f9f3652d53: 'Newsletter Signup' # Newsletter Signup
+    453f9294-407d-405a-b73b-d5b63aec2eaa: SEO # SEO
+    656f6195-c170-449d-a656-2f00315bab20: 'Primary Blog Content' # Primary Blog Content
+    923d8646-3be2-4308-9885-6a849083e88b: 'Image Position - L/R' # Image Position - L/R
+    0948fd3e-9624-45db-926b-4fdde6262710: 'Tabbed Section' # Tabbed Section
+    1574b955-b10d-4b76-83c3-682ff57afdc0: 'Left Border' # Left Border
+    2232d4f5-5cd2-486c-a20c-81992787e633: Testimonials # Testimonials
+    3713c97d-7fe6-4462-b02f-6b9f4df38c60: 'Blog Content' # Blog Content
+    8591badb-f584-4d11-8886-8e8e01957bae: 'Blog Categories' # Blog Categories
+    9023f06b-9ae7-4baa-942f-8a2a1ebe07cd: Hero # Hero
+    11443a96-783d-4acf-8c1f-f07f6604c7f5: 'Split Content Hero' # Split Content Hero
+    27614c47-5513-4551-beb1-347205d45a65: 'Case Study Blocks' # Case Study Blocks
+    75888d10-eea3-43ba-b1de-f473e99ea17f: 'Full Width Call to Action' # Full Width Call to Action
+    8234205e-f069-4229-bb99-3b178b18fc67: 'Tall Parallax Hero' # Tall Parallax Hero
+    21570958-6155-4ea9-9777-4011cc9cf618: 'Space Image' # Space Image
+    46729116-829d-4657-98cc-5502f96b590a: Category # Category
+    94571035-5f66-4e45-89b4-f7e36a3e603f: Before # Before
+    a4bb4937-a9cd-4813-8be9-47c63c3ba497: 'Work Square' # Work Square
+    a8aaec03-fb62-492a-ba1f-b822839be372: Questions # Questions
+    a409a273-87d4-47f8-bbf7-2e39a93bd6c6: 'Calendly Embed' # Calendly Embed
+    a8787df3-5236-487b-9f1e-b3f25f6ac187: 'Testimonial Selector' # Testimonial Selector
+    a4400310-3e62-495d-813b-1c31362f5ddb: After # After
+    a7852838-0859-4c63-a1a1-4ecfb77a284e: 'Blog Builder' # Blog Builder
+    aca5b84a-bad8-4e09-ae68-5c911f7a14e6: 'Blog Listing' # Blog Listing
+    ae56df27-28f8-4da3-a3be-fba626998d5f: Links # Links
+    afc81e04-cd3e-4112-970d-6969f8f40b8f: 'CTA Background' # CTA Background
+    b1fe4d99-7404-4809-ba1c-759f2742d0ef: Testimonials # Testimonials
+    bdf6317d-0df7-449f-a937-a1a274ffb106: 'Generic Page' # Generic Page
+    bec78600-6a15-422b-9da6-dc4c7e0f1280: 'Recent Blogs' # Recent Blogs
+    c64b9e5a-611b-4185-a351-6c4a78f15a50: 'Team Listing' # Team Listing
+    c84f5597-33f9-4b1f-adee-afddfb638660: Globals # Globals
+    cb6226c7-5901-41ed-ba28-a78b9504a3df: Images # Images
+    d9d39b81-9a88-4405-a3b2-7d7bc9aa475a: FAQs # FAQs
+    d28ac774-ff3f-4f08-aaee-4c7dd13f1b55: Testimonial # Testimonial
+    d99bf7af-1eb1-4b77-814e-624eeec1a0e3: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
+    d8298ca5-3785-4f41-bd3f-909cc81b5a4a: Blog # Blog
+    da9f3d8e-5ba9-4eb9-a423-6ea09ddaed21: Form # Form
+    db3255ed-b5fc-48fe-952a-59a8a7a187f0: Team # Team
+    dbb45946-28f2-4f3d-9c76-121829aeeede: Square # Square
+    e72b2499-d930-4ad6-976f-1d38f7902af2: 'Author Attribution' # Author Attribution
+    ea602fb0-2096-4803-a74f-8f85795991ce: 'Featured Blog' # Featured Blog
+    ecc85d6a-2904-458b-902e-70d61d9c378c: 'Inline Call to Action' # Inline Call to Action
+    ee488df3-3fc8-46a1-bfd1-d0a8f35bc6fb: 'Case Study' # Case Study
+    f0cb56b1-e049-4ad0-a079-9cfe21d5f20d: 'Global Settings' # Global Settings
+    f0ee42f3-fff2-4fa2-a479-7af9e17a7f97: 'Homepage Hero' # Homepage Hero
+    f3e544b8-88bf-4761-8df2-d767fa1502b7: Text # Text
+    f91fcdea-f3d2-414e-9389-43881860e4aa: 'Case Study Block' # Case Study Block
+    fa7dea2f-cd80-4e27-9e64-678f9a99df1a: 'Short Parallax Hero' # Short Parallax Hero
+    fa59b73c-4193-4d7e-a42a-2bda6d535687: 'Lightswitch - Default On' # Lightswitch - Default On
+    fb0420bb-0fbf-46d2-afd2-f7992c60c886: 'Contact Form' # Contact Form
+    fe1a3d03-8674-4374-bb2c-56c90cfff222: 'Careers Embed' # Careers Embed
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: NZX3BBKF6M5IRZ78KY77CDUL
+    schemaVersion: 3.4.8
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: 2APZIQSZMXT6KX5J6Z8JXZER
+    schemaVersion: 5.4.2
+    settings:
+      alertNotificationRecipients: null
+      allowBuilderTemplateCreation: true
+      allowDashesInFieldHandles: false
+      allowFileTemplateEdit: '1'
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
+      clientDigestFrequency: 1
+      clientDigestRecipients: null
+      defaultFromEmail: '{{ craft.app.projectConfig.get(''email.fromEmail'') }}'
+      defaultFromName: '{{ craft.app.projectConfig.get(''email.fromName'') }}'
+      defaultView: forms
+      defaults:
+        __assoc__:
+          -
+            - previewHtml
+            - true
+          -
+            - twigInHtml
+            - true
+          -
+            - twigIsolation
+            - true
+          -
+            - includeSampleTemplates
+            - true
+          -
+            - notifications
+            -
+              __assoc__:
+                -
+                  - admin
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - conditional
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - userSelect
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - emailField
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+          -
+            - settings
+            -
+              __assoc__:
+                -
+                  - general
+                  -
+                    __assoc__:
+                      -
+                        - formType
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - submissionTitle
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - '{{ dateCreated|date("Y-m-d H:i:s") }}'
+                      -
+                        - formattingTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - basic-light/index.twig
+                -
+                  - dataStorage
+                  -
+                    __assoc__:
+                      -
+                        - storeData
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - defaultStatus
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 2
+                      -
+                        - collectIp
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                -
+                  - processing
+                  -
+                    __assoc__:
+                      -
+                        - ajax
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showIndicator
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - processingText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - Processing...
+                -
+                  - successAndErrors
+                  -
+                    __assoc__:
+                      -
+                        - successBehavior
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - reload
+                      -
+                        - returnUrl
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Form has been submitted successfully!'
+                      -
+                        - errorMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Sorry, there was an error submitting the form. Please try again.'
+                -
+                  - limits
+                  -
+                    __assoc__:
+                      -
+                        - duplicateCheck
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - no_limit
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: null
+      displayFeed: true
+      emailTemplateDefault: database
+      emailTemplateDirectory: ''
+      emailTemplateStorageType: files_database
+      exportHandlesAsNames: false
+      exportLabels: false
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: _freeform
+      formattingTemplate: basic-light/index.twig
+      loggingLevel: error
+      minimumSubmitTime: null
+      pluginName: null
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      purgeAssets: true
+      queuePriority: null
+      rememberPageSubmitOrder: true
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: files
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      sitesEnabled: false
+      spamFolderEnabled: true
+      spamProtectionBehavior: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      successTemplateDirectory: ''
+      updateSearchIndexes: true
+      useQueueForEmailNotifications: false
+      useQueueForIntegrations: false
+  imager-x:
+    edition: lite
+    enabled: true
+    licenseKey: RX5TGB2LOPNPMIQ7NT82XU24
+    schemaVersion: 4.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 01CJY93G302YZE9KWIU3H8C8
+    schemaVersion: 3.0.13
+  servd-asset-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+    settings:
+      adjustFeedmeLogs: ''
+      assetsEnvironment: $SERVD_ASSET_ENVIRONMENT
+      assetsEnvironmentOverwrite: ''
+      cacheClearMode: full
+      clearCachesOnSave: always
+      disableDynamic: ''
+      disableTransforms: ''
+      fsMaps:
+        __assoc__:
+          -
+            - servd
+            - none
+      fsMapsEnabled: ''
+      imageAutoConversion: webp
+      injectCors: '1'
+      projectSlug: $SERVD_PROJECT_SLUG
+      securityKey: $SERVD_SECURITY_KEY
+      suppressWarnings: '1'
+      useLocalVolumes: false
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: $CRAFT_SITE_NAME
+  retryDuration: null
+  schemaVersion: 5.7.0.3
+  timeZone: America/Chicago

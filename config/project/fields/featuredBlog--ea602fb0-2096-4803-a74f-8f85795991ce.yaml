@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: featuredBlog
+instructions: 'If desired, manually set a featured blog. Otherwise, the most recent will be displayed.'
+name: 'Featured Blog'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:d8298ca5-3785-4f41-bd3f-909cc81b5a4a' # Blog
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

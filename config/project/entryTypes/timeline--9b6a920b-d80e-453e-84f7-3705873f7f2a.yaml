@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  f9a055aa-292b-4352-af9d-d8c2971469b4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T05:18:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 074cfca0-60c5-4891-849a-3131a586e664 # Timeline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a8a3ea21-eb3b-41a9-9ce2-6d038b2b9be9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f55ff1bc-3e1b-4411-a91a-0601491398fd
+        userCondition: null
+handle: timeline
+hasTitleField: false
+icon: null
+name: Timeline
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Timeline Block'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

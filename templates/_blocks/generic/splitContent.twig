@@ -1,0 +1,29 @@
+{% set image = block.image.eagerly().one() ?? globalSettings.fallbackBannerImage.eagerly().one() %}
+{% set subheadline = block.subheadline %}
+{% set headline = block.headline %}
+{% set copy = block.copy %}
+{% set imageOrdering = block.imagePositionLR.value ?? 'left' %}
+{% set imageOrderingLUT = {
+    'left': 'medium-order-1 small-order-1 Ta(start)',
+    'right': 'medium-order-2 small-order-2 Ta(end)'
+} %}
+{% set textOrderingLUT = {
+    'left': 'medium-order-2 small-order-2',
+    'right': 'medium-order-1 small-order-1'
+} %}
+
+<section class="section-container -narrow -animation-trigger grid-x align-middle Pt(6rem)!">
+	<div class="half-block {{ imageOrderingLUT[imageOrdering] }}">
+
+		<div class="image-container clip-path-up shrink-trans">
+			<img alt="{{ image.alt }}" title="{{ image.title }}" class="image-inner" src="{{ image.getUrl('spaceImage') }}"/>
+		</div>
+	</div>
+	<div class="half-block fade-up content {{ textOrderingLUT[imageOrdering] }}">
+		<h2 class="header-one -underline grow-after Mb(3rem)">{{ headline }}</h2>
+		<h3 class="paragraph -thicc blue">{{ subheadline }}</h3>
+		<div class="Mb(2rem) Mt(2rem)">
+			{{ copy }}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,47 @@
+color: null
+fieldLayouts:
+  2086c097-b688-4356-a188-5c59d951f211:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-14T01:12:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f36a167-9640-4dd6-80d5-7ff18f04ef7e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-14T01:12:15+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'All active team members will be automatically. Add or deactivate members in the Team section.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 46f1b194-8071-4131-803e-043cab4a5c78
+            userCondition: null
+        name: Content
+        uid: 8f3a5a12-c579-437c-9810-201f4e9a4d5e
+        userCondition: null
+handle: teamListing
+hasTitleField: false
+icon: null
+name: 'Team Listing'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ headline }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

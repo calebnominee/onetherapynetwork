@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: spaceImage
+height: 300
+interlace: none
+mode: crop
+name: 'Space Image'
+position: center-center
+quality: null
+upscale: true
+width: 570

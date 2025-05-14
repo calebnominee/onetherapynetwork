@@ -1,0 +1,8 @@
+<article class="small-12 medium-6 blog-article cell {% if index == 2 %}Mb(0rem)!--sm{% endif %}">
+	{% if thumbnail|length %}
+		<img alt="{{ thumbnail.alt }}" title="{{ thumbnail.title }}" src="{{ thumbnail.getUrl('spaceImage') }}"/>
+	{% endif %}
+	<h2>{{ title }}</h2>
+	<p>{{ excerpt }}</p>
+	<a href="{{ url }}" class="link -color-dark-grey">Learn More</a>
+</article>

@@ -1,0 +1,43 @@
+{% extends "_layouts/global" %}
+
+{% set featuredBlog = entry.featuredBlog.eagerly().one() ?? craft.entries.section('blog').eagerly().one() %}
+
+{% set blog = craft.entries.section('blog').limit(5).id('not ' ~ featuredBlog.id) %}
+
+{% paginate blog as pageInfo, pageEntries %}
+
+{% block site %}
+
+	{% include '_components/heroes/blogListing' with {
+		headline: featuredBlog.title,
+		excerpt: featuredBlog.excerpt,
+		url: featuredBlog.url,
+		category: featuredBlog.blogCategories.eagerly().one(),
+		thumbnail: featuredBlog.thumbnail.eagerly().one() ?? featuredBlog.featuredImage.eagerly().one()
+	} only %}
+
+	{% include '_blocks/blogListing/categories' %}
+
+	{% for blog in pageEntries %}
+		{% include '_components/cards/blogListingCard' with {
+			title: blog.title,
+			excerpt: blog.excerpt,
+			url: blog.url,
+			category: blog.blogCategories.eagerly().one(),
+			thumbnail:  blog.thumbnail.eagerly().one() ?? blog.featuredImage.eagerly().one(),
+			isEven: loop.index is even
+		} only %}
+	{% endfor %}
+
+	{% if blog|length > 5 %}
+		{% include '_blocks/blogListing/pagination' %}
+	{% endif %}
+
+	{% for block in entry.pageBuilder.all() %}
+
+		{% include '_blocks/generic/' ~ block.type.handle %}
+
+	{% endfor %}
+
+
+{% endblock %}

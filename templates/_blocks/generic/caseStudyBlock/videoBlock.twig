@@ -1,0 +1,23 @@
+<section class="-animation-trigger grid-x align-middle">
+
+	<div class="half-block Ta(start) {% if block.videoPosition == 'right' %}small-order-1 medium-order-2{% endif %}">
+		<div class="responsive-embed widescreen">
+			{{ block.videoEmbed|raw }}
+		</div>
+	</div>
+
+	<div class="half-block content {% if block.imagePosition == 'right' %}small-order-2 medium-order-1{% endif %} Mt(3rem)--sm">
+		{% if block.subheader|length > 0 %}
+			<h4 class="header-four fade-down Mb(3rem)">{{ block.subheader }}</h4>
+		{% endif %}
+		{% if block.header|length > 0 %}
+			<h2 class="header-two grow-after fade-down transition-delay-3 -underline">{{ block.header }}</h2>
+		{% endif %}
+		<div class="fade-down transition-delay-6">
+			{% if block.copy|length > 0 %}
+				{{ block.copy }}
+			{% endif %}
+		</div>
+	</div>
+
+</section>

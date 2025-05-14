@@ -1,0 +1,9 @@
+{% set blogPost = block.featuredBlog.one() ?? craft.entries.section('blog').one() %}
+
+{% include '_components/cards/featuredBlogCard.twig' with {
+    thumbnail: blogPost.thumbnail.one() ?? globalSettings.fallbackBannerImage.eagerly().one(),
+    title: blogPost.title,
+    excerpt: blogPost.excerpt,
+    url: blogPost.url,
+} %}
+

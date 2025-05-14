@@ -1,0 +1,32 @@
+{% extends '_layouts/global' %}
+
+
+{% set header = 'alt' %}
+
+{% set heroImage = entry.featuredImage.eagerly().one() ?? entry.thumbnail.eagerly().one() %}
+{% set blogBuilder = entry.blogBuilder.all() %}
+
+{% block site %}
+
+    {% include '_components/heroes/blogHero' with {
+        headline: entry.title,
+        subheadline: entry.subheadline,
+        postDate: entry.postDate|date('M d, Y'),
+        heroImage: heroImage
+    } only %}
+
+
+    {% if blogBuilder|length %}
+
+        {% for block in blogBuilder %}
+
+            {% include '_blocks/blog/' ~ block.type.handle with {
+                entryId: entry.id
+            } %}
+
+        {% endfor %}
+
+
+    {% endif %}
+
+{% endblock %}

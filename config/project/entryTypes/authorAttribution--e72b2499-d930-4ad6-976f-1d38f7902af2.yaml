@@ -1,0 +1,72 @@
+color: null
+fieldLayouts:
+  c8af15ca-b20d-46c6-b122-acd3addedf7a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-13T03:51:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d2aeb00-5762-4188-ba9b-2c2d610b1fcd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T03:51:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: authorName
+            includeInCards: false
+            instructions: null
+            label: 'Author Name'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51848900-e23f-4f46-8e3e-a07bc7f460b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-13T03:51:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: authorPosition
+            includeInCards: false
+            instructions: null
+            label: 'Author Position'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9409f87d-a26b-4f67-b810-454731b4dda4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 32c35c2b-f3a3-4dc2-ba22-c85e0cada5eb
+        userCondition: null
+handle: authorAttribution
+hasTitleField: false
+icon: null
+name: 'Author Attribution'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{ text }'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
