@@ -6,12 +6,12 @@
   "require": {
     "craftcms/ckeditor": "4.8.0",
     "craftcms/cms": "5.7.5",
+    "craftcms/contact-form": "^3.1.0",
     "nystudio107/craft-minify": "^5.0.0-beta.2",
     "nystudio107/craft-seomatic": "5.1.13",
     "nystudio107/craft-vite": "^5.0.0-beta.3",
     "putyourlightson/craft-sprig": "3.6.1",
     "servd/craft-asset-storage": "4.0.15",
-    "solspace/craft-freeform": "^5.10.13",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
