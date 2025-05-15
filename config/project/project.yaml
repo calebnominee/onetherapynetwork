@@ -1,4 +1,4 @@
-dateModified: 1747330224
+dateModified: 1747330327
 elementSources:
   craft\elements\Entry:
     -
@@ -115,10 +115,9 @@ email:
   replyToEmail: null
   template: _emails/system.twig
   transportSettings:
-    apiKey: $MAILGUN_API_KEY
-    domain: $MAILGUN_DOMAIN
-    endpoint: $MAILGUN_ENDPOINT
-  transportType: craft\mailgun\MailgunAdapter
+    messageStream: ''
+    token: $POSTMARK_TOKEN
+  transportType: craftcms\postmark\Adapter
 fs:
   servd:
     hasUrls: false
@@ -235,6 +234,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from One Therapy Network'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: $CONTACT_FORM_EMAIL
   formie:
     edition: standard
     enabled: true
