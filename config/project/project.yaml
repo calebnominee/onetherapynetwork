@@ -1,4 +1,4 @@
-dateModified: 1747330327
+dateModified: 1747331252
 elementSources:
   craft\elements\Entry:
     -
@@ -113,7 +113,7 @@ email:
   fromEmail: $CRAFT_SYSTEM_EMAIL
   fromName: $CRAFT_SITE_NAME
   replyToEmail: null
-  template: _emails/system.twig
+  template: ''
   transportSettings:
     messageStream: ''
     token: $POSTMARK_TOKEN

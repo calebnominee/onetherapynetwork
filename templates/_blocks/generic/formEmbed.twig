@@ -32,7 +32,9 @@
 	<div class="small-12 medium-7 medium-offset-1 cell content Mb(2rem)">
 		<form class="grid-x grid-margin-x" method="post" action="" accept-charset="UTF-8">
 			{{ csrfInput() }}
-			<input type="hidden" name="action" value="contact-form/send">
+			{{ actionInput('contact-form/send') }}
+			{{ redirectInput('/thank-you') }}
+			
 			<div class="fade-up small-12 medium-6 cell small-order-1 medium-order-2">
 				<input class="W(100%)" type="text" placeholder="First Name" name="message[First_Name]"/>
 			</div>

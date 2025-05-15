@@ -32,7 +32,8 @@
 	<div class="small-12 medium-7 medium-offset-1 cell content Mb(2rem)">
 		<form class="grid-x grid-margin-x" method="post" action="" accept-charset="UTF-8">
 			{{ csrfInput() }}
-			<input type="hidden" name="action" value="contact-form/send">
+			{{ actionInput('contact-form/send') }}
+			{{ redirectInput('/thank-you') }}
 			<div class="fade-up small-12 medium-6 cell small-order-1 medium-order-2">
 				<input class="W(100%)" type="text" placeholder="First Name" name="message[First_Name]"/>
 			</div>
@@ -46,9 +47,9 @@
 				<input class="W(100%)" type="text" placeholder="Email Address" name="fromEmail"/>
 			</div>
 			<div class="fade-up transition-delay-4 select-container small-12 cell small-order-1 medium-order-2">
-				<select name="subject">
+				<select name="message[Last_Name]">
 					<option selected hidden value="">Which best describes your profession?</option>
-					<option value="Runnin Your Own Practice">Running own practice</option>
+					<option value="Running Your Own Practice">Running own practice</option>
 					<option value="Think About Opening a Practice">Thinking about opening a practice</option>
 					<option value="Other">Other</option>
 				</select>
