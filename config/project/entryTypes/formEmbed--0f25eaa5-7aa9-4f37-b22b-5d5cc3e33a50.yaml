@@ -57,22 +57,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-05-13T03:42:37+00:00'
-            editCondition: null
+            dateAdded: '2025-05-16T21:14:18+00:00'
+            dismissible: false
             elementCondition: null
-            fieldUid: da9f3d8e-5ba9-4eb9-a423-6ea09ddaed21 # Form
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 99fd1ce0-2633-444d-ad2a-9d137f7b90a1
+            style: tip
+            tip: 'Static contact form will appear'
+            type: craft\fieldlayoutelements\Tip
+            uid: 31aa1601-d318-45ce-819c-4374d8a8e683
             userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 0626413c-9354-47a3-855f-0d6984f1d8bb
         userCondition: null
